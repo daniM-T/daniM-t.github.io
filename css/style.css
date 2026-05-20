@@ -1,0 +1,39 @@
+
+#startscreentext:hover {
+    cursor:pointer;
+}
+#startscreentext {
+    font-size: 10vw;
+    background: repeating-linear-gradient(135deg, #134E5E 0%, #71B280 50%, #134E5E 100%);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: animation-gradient-start 2.5s linear infinite;
+}
+@keyframes animation-gradient-start {
+    from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 200% 50%;
+    }
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+}
+#startscreen {
+    color: white;
+    font-size: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.invisible {
+    display: none;
+}
