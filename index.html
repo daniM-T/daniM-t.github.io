@@ -1,26 +1,151 @@
 <!doctype html>
-<html lang="ne">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Daniel Meye website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="extra_css/startscreen.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Daniel Portfolio</title>
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark">
 
-<div id="startscreen" class=" d-flex justify-content-center">
-    <h1 id="startscreentext">Daniel Meye</h1>
-</div>
+<!-- ScrollSpy actief -->
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
 
-<script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+<!-- NAVBAR -->
+<nav id="navbar" class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">daniM-T</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- HEADER -->
+<header class="text-center p-5 bg-light mt-5">
+    <h1>Welkom! Ik ben Daniel</h1>
+    <p class="lead">Software Developer in opleiding • Ik hou van games bouwen</p>
+
+    <button class="btn btn-primary btn-big" onclick="scrollNaarProjecten()">
+        Bekijk mijn projecten
+    </button>
+</header>
+
+<!-- ABOUT ME -->
+<section id="about" class="container mt-5 pt-5">
+    <h2>About Me</h2>
+    <p>
+        Ik ben een eerstejaars software developer en ik leer HTML, CSS, JavaScript en PHP.
+        Ik bouw graag games, websites en kleine interactieve projecten.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container mt-5 pt-5">
+    <h2>Projects</h2>
+
+    <div id="cards" class="row mt-4">
+
+        <div class="col-md-4">
+            <a href="">
+            <div class="card p-3 shadow-sm">
+                <h4>Mon-In</h4>
+                <p>Een simpele website gemaakt met PHP en Bootstrap.</p>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <h4>Cards-Game</h4>
+                <p>Een kleine JavaScript applicatie met interactieve elementen.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <h4>Quiz</h4>
+                <p>Een kleine game gemaakt met JavaScript.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <h4>galgje</h4>
+                <p>Een kleine game gemaakt met JavaScript.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <h4>Shadow-Child</h4>
+                <p>Een  game gemaakt met Godot.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container mt-5 pt-5">
+    <h2>Contact Me</h2>
+
+    <p>Je kunt mij bereiken via onderstaande gegevens:</p>
+
+    <div class="contact-info mt-4">
+
+        <p><strong>Email:</strong>
+        <p></p>danielmeye09@gmail.com
+        </p>
+
+        <p><strong>Telefoon:</strong>
+        <p>+31 6 39 02 20 21</p>
+        </p>
+
+        <p><strong>LinkedIn:</strong></p>
+
+        <a href="https://www.linkedin.com/in/daniel-meye-575581410/"
+           target="_blank"
+           class="linkedin-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                 alt="LinkedIn"
+                 class="icon-img">
+        </a>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="text-center p-3 mt-5 bg-dark text-white">
+    © 2026 Daniel – Portfolio
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
 </body>
 </html>

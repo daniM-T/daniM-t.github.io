@@ -1,39 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
 
-#startscreentext:hover {
-    cursor:pointer;
+/* NAVBAR hover */
+.nav-link {
+    transition: color 0.2s ease, transform 0.2s ease;
 }
-#startscreentext {
-    font-size: 10vw;
-    background: repeating-linear-gradient(135deg, #134E5E 0%, #71B280 50%, #134E5E 100%);
-    background-size: 200% 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
-    animation: animation-gradient-start 2.5s linear infinite;
+.nav-link:hover {
+    color: #0d6efd;
+    transform: scale(1.05);
 }
-@keyframes animation-gradient-start {
-    from {
-        background-position: 0% 50%;
+
+/* Highlight active ScrollSpy link */
+.nav-link.active {
+    color: #0d6efd !important;
+    font-weight: bold;
+}
+
+/* Cards */
+#cards {
+    transition: transform 0.2s;
+}
+
+#cards:hover {
+    transform: scale(1.03);
+}
+
+/* Grote button + animatie */
+.btn-big {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.btn-big:hover {
+    transform: scale(1.12);
+    background-color: #0b5ed7;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
     }
-    to {
-        background-position: 200% 50%;
+
+    .btn-big {
+        width: 100%;
     }
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-content: flex-end;
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
 }
-#startscreen {
-    color: white;
-    font-size: 10vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+
+/* Contact icons */
+.icon-img {
+    width: 50px;
+    transition: transform 0.25s ease;
 }
-.invisible {
-    display: none;
+
+.icon-img:hover {
+    transform: scale(1.15);
+}
+
+/* Contact links */
+.contact-info a {
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-info a:hover {
+    color: #084298;
 }
