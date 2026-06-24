@@ -1,0 +1,71 @@
+/* 
+flex voor kleine elementen
+galgje size aanpassen
+margin en padding aanpassen
+grid voor grote elemeneten
+kleuren aanpassen
+kleuren in root als var zetten
+*/
+*{}
+
+:root{
+    
+}
+
+img{
+    width: 500px;
+    align-items: center;    
+}
+
+header{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+.guess{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+
+}
+
+.hidden-Word{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.letters{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#result-box {
+  width: 300px;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto;
+  display: none;
+}
+
+#result-box.win {
+  background-color: #28a745; /* groen */
+}
+
+#result-box.lose {
+  background-color: #dc3545; /* rood */
+}
+
+#retry-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#retry-btn:hover {
+  background-color: #666;
+}

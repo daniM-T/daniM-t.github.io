@@ -1,0 +1,86 @@
+html {
+    background: linear-gradient(120deg, forestgreen, black);
+    font-family: sans-serif;
+}
+
+.quiz-container {
+    width: 450px;
+    margin: 80px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.vraaglijn {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.answer {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    border: 2px solid black;
+    font-size: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.answer:hover:not(.green):not(.rood) {
+    transform: scale(1.1);
+    background-color: #e6e6e6;
+}
+
+.green {
+    background-color: #2ecc71 !important;
+    color: white;
+}
+
+.rood {
+    background-color: #e74c3c !important;
+    color: white;
+}
+
+.pvolgende {
+    width: 100%;
+    padding: 15px;
+    background: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.pvolgende:hover {
+    background: #1b6fd1;
+}
+
+.pvorige {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.reset {
+    width: 100%;
+    padding: 15px;
+    background: brown;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reset:hover {
+    background: #8b2d2d;
+}
+
+.onzichtbaar {
+    display: none;
+}

@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0a1a2a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #66c2ff;
+  text-shadow: 1px 1px 2px black;
+}
+
+.box {
+  background: #123456;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  margin: 20px auto;
+  border: 2px solid #66c2ff;
+  box-shadow: 0 0 15px rgba(102,194,255,0.3);
+}
+
+button {
+  background: #66c2ff;
+  border: none;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #99ddff;
+}
+
+.dice {
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin: 10px 0;
+  color: #66c2ff;
+  text-shadow: 1px 1px 2px black;
+}
+
+.controller {
+  display: none;
+  grid-template-areas:
+    ". up ."
+    "left center right"
+    ". down .";
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.up    { grid-area: up; }
+.down  { grid-area: down; }
+.left  { grid-area: left; }
+.right { grid-area: right; }
+.center{ grid-area: center; }
+
+.controller button {
+  width: 75px;
+  height: 75px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.center {
+  background: #0f2a44;
+  color: #66c2ff;
+  border: 2px solid #66c2ff;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 60px;
+}
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  color: #99ddff;
+  text-shadow: 1px 1px 2px black;
+}
+
+#computerBid {
+  color: #66c2ff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.lives {
+  color: #99ddff;
+  font-size: 20px;
+  font-weight: bold;
+}

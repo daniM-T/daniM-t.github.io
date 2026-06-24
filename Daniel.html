@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Liar's Dice</title>
+  <link rel="stylesheet" href="Daniel.css">
+</head>
+<body>
+
+<h1>Liar's Dice</h1>
+
+<div class="box">
+  <p>Jouw dobbelstenen:</p>
+  <div id="playerDice" class="dice"></div>
+  <button onclick="rollDice()">Rol dobbelstenen</button>
+</div>
+
+<div class="box">
+  <h2>Kies jouw bod</h2>
+
+  <div class="controller">
+    <button class="up" onclick="valueUp()">↑</button>
+
+    <button class="left" onclick="countDown()">←</button>
+    <div id="display" class="center">1 x ⚀</div>
+    <button class="right" onclick="countUp()">→</button>
+
+    <button class="down" onclick="valueDown()">↓</button>
+  </div>
+
+  <div class="actions">
+    <button onclick="submitBid()">Bevestig bod</button>
+    <button onclick="callLiar()">Liar!</button>
+  </div>
+</div>
+
+<div class="box">
+  <p>Computer dobbelstenen:</p>
+
+  <div id="computerDice" class="dice"></div>
+
+  <p id="computerBid" class="result"></p>
+
+  <p class="result"></p>
+
+  <p class="lives">Lives: 2</p>
+</div>
+
+<script src="Daniel.js"></script>
+
+<footer>
+  <p>&copy; 2026 - POWER RANGERS</p>
+</footer>
+
+</body>
+</html>

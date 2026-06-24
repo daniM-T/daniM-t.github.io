@@ -1,0 +1,69 @@
+<!-- 
+basis elementen
+form met input voor woord wat we raden
+form om de letters te raden
+element waar het geheime woord in staat
+afbeelding voor hoeveel fouten (galg)
+een lijst met alle gerade letters
+header/footer
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galgje</title>
+    <link rel="stylesheet" href="galgje.css">
+</head>
+
+<body>
+   <div id="result-box" class="hidden">
+    <p id="result-text"></p>
+    <button id="retry-btn">Opnieuw</button>
+</div>
+
+    <div class="wrapper">
+        <header>
+            <h1>Galgje</h1>
+        </header>
+        <main>
+            <section class="guess-word">
+                <form class="word-form">
+                    <label for="guess-word">Woord</label>
+                    <div class="form-elements">
+                        <input type="text" name="guess-word" id="guess-word" required>
+                        <button name="submit">Verzenden</button>
+                    </div>
+                </form>
+            </section>
+            <section class="guess-letter">
+                <form>
+                    <label for="guess-letter">Raad letter</label>
+                    <div class="form-elements">
+                        <input type="text" name="guess-letter" id="guess-letter" required>
+                        <button name="submit">Verzenden</button>
+                    </div>
+                </form>
+            </section>
+            <section class="hidden-word">
+                <p>_ _ _ _ _</p>
+            </section>
+            <section class="hangman-image">
+                <img src="galgje/.png" alt="hangman-image">
+            </section>
+            <section class="guessed-letters">
+                <ul>
+                    
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Meye</p>
+        </footer>
+    </div>
+    <script src="galgje.js"></script>
+</body>
+
+</html>
