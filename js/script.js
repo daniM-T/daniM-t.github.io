@@ -1,7 +1,7 @@
 // Smooth scroll helper
 function scrollNaarProjecten() {
     const sectie = document.getElementById("projects");
-    if (sectie) sectie.scrollIntoView({ behavior: "smooth" });
+    if (sectie) sectie.scrollIntoView({behavior: "smooth"});
 }
 
 /* ===== PRELOADER ===== */
