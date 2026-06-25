@@ -7,19 +7,27 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script defer src="script.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script defer src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <!-- ScrollSpy actief -->
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
 
+<!-- PRELOADER -->
+<div id="preloader">
+    <div class="pulse-loader"></div>
+</div>
+
+
+
 <!-- NAVBAR -->
-<nav id="navbar" class="navbar navbar-dark  navbar-expand-lg fixed-top shadow-sm">
+<nav id="navbar" class="navbar  navbar-expand-lg ">
     <div class="container">
 
-        <a class="navbar-brand fw-bold" href="#">daniM-T</a>
+        <a class="navbar-brand fw-bold" href="index.html"><h1>daniM-T</h1></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
@@ -45,7 +53,7 @@
 </nav>
 
 <!-- HEADER -->
-<header class="text-center p-5 bg-light mt-5">
+<header class="text-center p-5 mt-5">
     <h1>Welkom! Ik ben Daniel</h1>
     <p class="lead">Software Developer in opleiding • Ik hou van games bouwen</p>
 

@@ -7,12 +7,17 @@ body {
     font-size: 21px;
 }
 
-header {
-   background-color:#004F2D;
+
+/* ===== TRANSPARANTE NAVBAR ===== */
+.navbar {
+    background: rgba(0, 0, 0, 0.2) !important; /* doorzichtig */
+    backdrop-filter: blur(10px);               /* mooie blur */
+    transition: background 0.3s ease;
 }
 
-.navbar{
-    background-color: #606D5D;
+/* Navbar wordt iets donkerder bij scroll */
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.6) !important;
 }
 
 /* NAVBAR hover */
@@ -150,3 +155,51 @@ header {
     object-fit: cover;
     border-radius: 14px;
 }
+
+/* ===== COOL PRELOADER ===== */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0d1117; /* zelfde kleur als jouw body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.8s ease;
+}
+
+/* Glow pulse loader */
+.pulse-loader {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #88958D;
+    box-shadow: 0 0 20px #88958D, 0 0 40px #88958D;
+    animation: pulseGlow 1.2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 20px #88958D, 0 0 40px #88958D;
+    }
+    50% {
+        transform: scale(1.3);
+        box-shadow: 0 0 40px #88958D, 0 0 60px #88958D;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px #88958D, 0 0 40px #88958D;
+    }
+}
+
+/* Fade-out */
+#preloader.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
