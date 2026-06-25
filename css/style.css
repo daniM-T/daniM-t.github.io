@@ -8,7 +8,9 @@
 /* ===== BACKGROUND + LIGHT BLUR ===== */
 body{
     margin:0;
+    padding: 0;
     font-family: Arial, sans-serif;
+    font-size: 21px;
     background-color: var(--bg);
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 560'><rect width='100%' height='100%' fill='%2388958D'/><g stroke='%23000000' stroke-opacity='0.06' stroke-width='2' fill='none'><path d='M0 140 C200 120 400 280 600 220 C800 160 1000 300 1200 240'/><path d='M0 320 C180 260 360 380 600 340 C840 300 1020 420 1200 380'/><path d='M0 440 C160 520 420 420 600 480 C780 540 1040 460 1200 520'/></g></svg>");
     background-size: cover;
@@ -53,6 +55,7 @@ header, section, footer, .container{
     letter-spacing:1px;
 }
 
+
 .nav-link{
     color: rgba(255,255,255,0.9);
     text-transform:uppercase;
@@ -65,6 +68,24 @@ header, section, footer, .container{
     color: var(--accent);
     transform: translateY(-2px);
 }
+
+/* Dropdown styling */
+.dropdown-menu {
+    background: rgba(0,0,0,0.85) !important;
+    backdrop-filter: blur(4px);
+    border: 2px solid #004F2D;
+}
+
+.dropdown-item {
+    color: #fff !important;
+    transition: background .2s ease, color .2s ease;
+}
+
+.dropdown-item:hover {
+    background: #004F2D;
+    color: #BFD7EA !important;
+}
+
 
 /* ===== HERO ===== */
 .site-hero{
@@ -124,6 +145,11 @@ header, section, footer, .container{
 .project-card:hover{
     transform: translateY(-29px);
     box-shadow: 0 80px 100px rgba(0,0,0,0.28);
+}
+
+.project-img-placeholder{
+    width: 100%;
+    height: 10px;
 }
 
 .project-img{
