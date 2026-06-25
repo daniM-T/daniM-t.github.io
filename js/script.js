@@ -27,7 +27,7 @@ function scrollNaarProjecten() {
     }
 
     window.addEventListener('load', () => {
-        setTimeout(hidePreloader, 1600);
+        setTimeout(hidePreloader, 1750);
     });
 
     setTimeout(() => {
