@@ -1,30 +1,25 @@
 <!doctype html>
 <html lang="nl">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Daniel Portfolio</title>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- AOS -->
+    <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Scripts -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
-    <script defer src="js/script.js" ></script>
-
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
 
 <!-- PRELOADER -->
 <div id="preloader" aria-hidden="true">
     <div class="pulse-loader" role="img" aria-label="Loading">
-        <span class="loader-text">D</span>
+        <span class="loader-text">d</span>
     </div>
 </div>
 
@@ -32,6 +27,7 @@
 <nav id="navbar" class="navbar fixed-top navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand fw-bold" href="#">daniM‑T</a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,7 +45,7 @@
 <!-- HERO / HEADER -->
 <header class="site-hero d-flex align-items-center justify-content-center">
     <div class="hero-inner text-center" data-aos="fade-up">
-        <h1 class="hero-title">Welkom</h1>
+        <h1 class="hero-title">Welkom!</h1>
         <p class="hero-sub">Software Developer in opleiding • Games &amp; Web</p>
     </div>
 </header>
@@ -58,8 +54,7 @@
 <section id="about" class="container section-large" data-aos="flip-up">
     <h2>About Me</h2>
     <p class="lead large-lead">
-        Ik ben Daniel, een eerstejaars software developer. Ik leer HTML, CSS, JavaScript en PHP en bouw graag games en
-        websites.
+        Ik ben Daniel, een eerstejaars software developer. Ik leer HTML, CSS, JavaScript en PHP en bouw graag games en websites.
     </p>
 </section>
 
@@ -67,7 +62,6 @@
 <section id="projects" class="container section-large" data-aos="flip-up">
     <h2 class="mb-4">Projecten</h2>
     <div class="row g-4">
-        <!-- Card 1 -->
         <div class="col-md-6 col-lg-3" data-aos="flip-up">
             <div class="project-card">
                 <img src="img/collectables.png" class="project-img" alt="Collectables">
@@ -76,7 +70,7 @@
                 <a href="#" class="btn project-btn w-100">Bekijk</a>
             </div>
         </div>
-        <!-- Card 2 -->
+
         <div class="col-md-6 col-lg-3" data-aos="flip-up">
             <div class="project-card">
                 <img src="img/galgje.png" class="project-img" alt="Galgje">
@@ -85,7 +79,7 @@
                 <a href="#" class="btn project-btn w-100">Bekijk</a>
             </div>
         </div>
-        <!-- Card 3 -->
+
         <div class="col-md-6 col-lg-3" data-aos="flip-up">
             <div class="project-card">
                 <img src="img/monin.png" class="project-img" alt="Mon-In">
@@ -94,7 +88,7 @@
                 <a href="#" class="btn project-btn w-100">Bekijk</a>
             </div>
         </div>
-        <!-- Card 4 -->
+
         <div class="col-md-6 col-lg-3" data-aos="flip-up">
             <div class="project-card">
                 <img src="img/quizsc.png" class="project-img" alt="Quiz">
@@ -109,12 +103,29 @@
 <!-- CONTACT -->
 <section id="contact" class="container section-large" data-aos="flip-up">
     <h2>Contact</h2>
-    <p>Email: danielmeye09@gmail.com</p>
+    <p>Email: <strong> danielmeye09@gmail.com</strong></p>
+    <p><strong>Telefoon:</strong>
+    <p>+31 6 39 02 20 21</p>
+    </p>
+
+    <p><strong>LinkedIn:</strong></p>
+
+    <a href="https://www.linkedin.com/in/daniel-meye-575581410/"
+       target="_blank"
+       class="linkedin-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+             alt="LinkedIn"
+             class="icon-img">
+    </a>
 </section>
 
 <footer class="text-center p-3 mt-5">
     © 2026 Daniel – Portfolio
 </footer>
 
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+<script src="js/script.js" defer></script>
 </body>
 </html>
