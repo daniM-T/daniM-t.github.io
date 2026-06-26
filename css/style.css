@@ -24,7 +24,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    backdrop-filter: blur(13px);
+    backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.02);
     pointer-events: none;
     z-index: 0;
