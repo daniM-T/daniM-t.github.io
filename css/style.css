@@ -260,3 +260,26 @@ header, section, footer, .container {
 
     /* nog kleiner op mobiel */
 }
+
+
+
+/* Typewriter effect */
+.multi-welcome {
+    font-size: clamp(40px, 8vw, 90px);
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #fff;
+    text-shadow: 0 6px 30px rgba(0,0,0,0.35);
+}
+
+#welcomeText {
+    border-right: 3px solid #fff;
+    padding-right: 8px;
+    animation: blinkCursor .7s infinite;
+}
+
+@keyframes blinkCursor {
+    0% { border-color: transparent; }
+    50% { border-color: white; }
+    100% { border-color: transparent; }
+}

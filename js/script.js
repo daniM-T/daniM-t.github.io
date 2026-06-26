@@ -55,3 +55,56 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+
+
+
+/* ===== MULTI-LANGUAGE WELCOME TYPEWRITER ===== */
+const welcomeTexts = [
+    "Welkom",
+    "Welcome",
+    "Bienvenido",
+    "Willkommen",
+    "Bienvenue",
+    "Benvenuto",
+    "ようこそ",
+    "환영합니다",
+    "欢迎",
+    "مرحبا"
+];
+
+let welcomeIndex = 0;
+let charIndex = 0;
+const welcomeElement = document.getElementById("welcomeText");
+
+function typeWelcome() {
+    const current = welcomeTexts[welcomeIndex];
+    welcomeElement.textContent = current.substring(0, charIndex);
+
+    charIndex++;
+
+    if (charIndex <= current.length) {
+        setTimeout(typeWelcome, 120);
+    } else {
+        setTimeout(eraseWelcome, 1500);
+    }
+}
+
+function eraseWelcome() {
+    const current = welcomeTexts[welcomeIndex];
+    welcomeElement.textContent = current.substring(0, charIndex);
+
+    charIndex--;
+
+    if (charIndex >= 0) {
+        setTimeout(eraseWelcome, 60);
+    } else {
+        welcomeIndex = (welcomeIndex + 1) % welcomeTexts.length;
+        setTimeout(typeWelcome, 300);
+    }
+}
+
+window.addEventListener("load", () => {
+    setTimeout(typeWelcome, 800); // start na preloader
+});
+
